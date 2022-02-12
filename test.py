@@ -1,1 +1,3 @@
-print(2**7)
+a = 'B'
+b = 'C'
+print(a < b)

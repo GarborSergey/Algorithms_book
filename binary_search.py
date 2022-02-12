@@ -21,7 +21,7 @@ def binary_search(list: list, item):
 
 
 my_list = range(120)
-x = binary_search(my_list, 59)
+x = binary_search(my_list, 0)
 print(x)
 print(*my_list)
 print(len(my_list))
