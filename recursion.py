@@ -19,3 +19,14 @@ def count_down1(i):
 
 
 count_down1(5)
+
+
+# Рекурсивная функция по вычислению факториала
+def fact(x):
+    if x == 1:
+        return 1
+    else:
+        return x * fact(x-1)
+
+
+print(fact(5))
