@@ -2,14 +2,14 @@
 # выбрать радиостанции
 
 # множества не содержат дубликатов
-states_needed = set(['mt', 'wa', 'or', 'id', 'nv', 'ut', 'ca', 'az'])  # Переданный массив преобразуется в множество
+states_needed = {'mt', 'wa', 'or', 'id', 'nv', 'ut', 'ca', 'az'}  # Переданный массив преобразуется в множество
 
 # словарь станциий
-stations = {'kone': set(['id', 'nv', 'ut']),
-           'ktwo': set(['id', 'wa', 'mt']),
-           'kthree': set(['or', 'nv', 'ca']),
-           'kfour': set(['nv', 'ut']),
-           'kfive': set(['az', 'ca'])
+stations = {'kone': {'id', 'nv', 'ut'},
+           'ktwo': {'id', 'wa', 'mt'},
+           'kthree': {'or', 'nv', 'ca'},
+           'kfour': {'nv', 'ut'},
+           'kfive': {'az', 'ca'}
            }
 
 final_station = set()  # Оптимальный выбор станций
